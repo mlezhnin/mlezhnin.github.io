@@ -1,8 +1,67 @@
-body {
-    background-color: lightgrey;
-    color: rgb(61, 61, 61);
-    font-family:'Courier New', Courier, monospace
-  }
-h1 {
-    color:rgb(0, 0, 0)
+html {
+  font-family: 'Inter';
+  font-size: 20px;
+  font-weight: 400;
+  height: 100%;
+  background-color: #181818;
 }
+
+header {
+  color: red;
+  padding-left:15%;
+}
+
+nav ul {
+  color: red;
+  list-style-type: none;
+  margin: 0;
+  padding: 14px;
+  overflow: hidden;
+  display: flex; /* Use flexbox for alignment */
+  align-items: center;
+}
+
+nav ul li {
+  padding-top: 10px;
+  padding-left: 14px;
+  float: left;
+}
+
+nav li a {
+  color: #9AA5B1;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+nav ul li.priority_nav {
+  color:#F5F7FA;
+  padding-top: 0px;
+  font-weight: 800;
+  font-size: 30px;
+}
+
+nav ul li.priority_nav a {
+  padding-top: 0px;
+  font-weight: 800;
+  font-size: 30px;
+  color:#F5F7FA;
+}
+
+section {
+  grid-area: content;
+  margin: 2em 5%;
+}
+
+footer {
+  color:#9AA5B1;
+  text-align: center;
+  padding: 1em 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Good color for text on light backgrounds */
+/* color: rgb(44, 44, 44); */
