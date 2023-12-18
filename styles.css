@@ -1,6 +1,6 @@
 html {
   font-family: 'Inter';
-  font-size: 20px;
+  font-size: 1.5vw;
   font-weight: 400;
   height: 100%;
   background-color: #181818;
@@ -22,7 +22,7 @@ nav ul {
 }
 
 nav ul li {
-  padding-top: 10px;
+  padding-top: .3em;
   padding-left: 14px;
   float: left;
 }
@@ -39,13 +39,13 @@ nav ul li.priority_nav {
   color:#F5F7FA;
   padding-top: 0px;
   font-weight: 800;
-  font-size: 30px;
+  font-size: 2vw;
 }
 
 nav ul li.priority_nav a {
   padding-top: 0px;
   font-weight: 800;
-  font-size: 30px;
+  font-size: 2vw;
   color:#F5F7FA;
 }
 
