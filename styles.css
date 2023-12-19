@@ -7,6 +7,7 @@ html {
 }
 
 header {
+  padding-top:6vh;
   padding-left:8vw;
   padding-right:8vw;
 }
@@ -14,7 +15,7 @@ header {
 nav ul {
   list-style-type: none;
   margin: 0;
-  padding: 14px;
+  padding: 0;
   overflow: hidden;
   display: flex; /* Use flexbox for alignment */
   align-items: center;
