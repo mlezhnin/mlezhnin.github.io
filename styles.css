@@ -31,7 +31,8 @@ nav ul {
 
 nav ul li {
   color: #9AA5B1;
-  padding-left: 1em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
   float: left;
 }
 
