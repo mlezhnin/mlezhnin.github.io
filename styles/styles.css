@@ -1,15 +1,22 @@
-html {
+html, body {
+  height: 100%;
   font-family: 'Inter';
   font-size: clamp(0.85rem, 2vw, 1rem);
   font-weight: 400;
-  height: 100%;
+  color: #9AA5B1;
   background-color: #181818;
 }
 
+/* For mobile only changes */
 @media (max-width: 500px) {
   header {
     display: flex;
-    justify-content: center; /* Center horizontally */
+    justify-content: center;
+    align-items: center;
+  }
+  div.content {
+    display: flex;
+    justify-content: center;
     align-items: center;
   }
 }
@@ -25,12 +32,11 @@ nav ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  display: flex; /* Use flexbox for alignment */
+  display: flex;
   align-items: center;
 }
 
 nav ul li {
-  color: #9AA5B1;
   padding-left: 0.5em;
   padding-right: 0.5em;
   float: left;
@@ -46,19 +52,25 @@ nav li a {
 
 nav ul li.priority_nav {
   color:#F5F7FA;
-  padding-top: 0px;
   font-weight: 800;
 }
 
 nav ul li.priority_nav a {
-  padding-top: 0px;
-  font-weight: 800;
   color:#F5F7FA;
 }
 
-section {
-  grid-area: content;
-  margin: 2em 5%;
+div.content {
+  padding-top:3vh;
+  padding-left:7vw;
+  padding-right:7vw;
+}
+
+div.content section {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
 }
 
 footer {
