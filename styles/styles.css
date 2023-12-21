@@ -1,8 +1,8 @@
 html, body {
   height: 100%;
   font-family: 'Inter';
-  font-size: clamp(0.85rem, 2vw, 1rem);
-  font-weight: 400;
+  font-size: 16px;
+  font-weight: 200;
   color: #9AA5B1;
   background-color: #181818;
 }
@@ -51,12 +51,14 @@ nav li a {
 }
 
 nav ul li.priority_nav {
-  color:#F5F7FA;
-  font-weight: 800;
+  color:#FAFAFA;
+  padding-left: 0;
+  font-weight: bold;
 }
 
 nav ul li.priority_nav a {
-  color:#F5F7FA;
+  color:#FAFAFA;
+  font-weight: bold;
 }
 
 div.content {
@@ -65,12 +67,39 @@ div.content {
   padding-right:7vw;
 }
 
-div.content section {
+.post {
+  display: flex;
+  flex-direction: column;
+}
+
+.posts {
+  list-style-type: none;
   margin: 0;
-  padding: 0;
+  float: left;
   overflow: hidden;
   display: flex;
   align-items: center;
+}
+
+.post_title {
+  color:#FAFAFA;
+  padding-bottom: 2px;
+  font-weight: bold;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.post_desc {
+  color: #9AA5B1;
+  padding-bottom: 2px;
+  text-decoration: none;
+}
+
+.post_time {
+  color: #4f555c;
+  padding-bottom: 2px;
+  font-size: 12px;
+  text-decoration: none;
 }
 
 footer {

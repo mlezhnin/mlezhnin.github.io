@@ -1,0 +1,12 @@
+[
+    {
+        "meta": {
+            "type": "tool"
+        },
+        "title": "Color picker tool",
+        "description": "A simple color picker tool",
+        "url": "/posts/colorPicker",
+        "date_created": 1703107021000,
+        "date_last_edited": 1703107021000
+    }
+]
