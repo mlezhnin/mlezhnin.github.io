@@ -24,9 +24,11 @@ document.addEventListener('DOMContentLoaded', function () {
     imageCanvas.addEventListener('mousemove', async function (e) {
         const x = e.offsetX;
         const y = e.offsetY;
+        const xDoc = e.pageX;
+        const yDoc = e.pageY;
         const pixel = ctx.getImageData(x, y, 1, 1);
         const bitmap = await createImageBitmap(ctx.getImageData(x-2, y-2, 5, 5))
-        magnify(bitmap, e.x, e.y);
+        magnify(bitmap, e.x, e.y, xDoc, yDoc);
         const data = pixel.data;
         const rgba = 'rgba(' + data[0] + ', ' + data[1] + ', ' + data[2] + ', ' + (data[3] / 255) + ')';
         selectedColor.innerText = rgba;
@@ -34,13 +36,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
 });
 
-function magnify(bitmap, x, y) {
+function magnify(bitmap, x, y, xDoc, yDoc) {
     const magnifierLens = document.getElementById('magnifierLens');
     const ctx = magnifierLens.getContext('2d');
 
     magnifierLens.style.position='absolute'
-    magnifierLens.style.left = x - 49 + 'px';
-    magnifierLens.style.top = y - 49 + 'px';
+    magnifierLens.style.left = xDoc - 49 + 'px';
+    magnifierLens.style.top = yDoc- 49 + 'px';
     
     ctx.imageSmoothingEnabled = false;
     ctx.drawImage(bitmap, 0, 0, magnifierLens.width, magnifierLens.height);
