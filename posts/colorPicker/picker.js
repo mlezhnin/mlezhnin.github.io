@@ -21,18 +21,25 @@ document.addEventListener('DOMContentLoaded', function () {
         reader.readAsDataURL(file);
     });
 
-    imageCanvas.addEventListener('mousemove', async function (e) {
+    async function mouseOverCanvas(e) {
         const x = e.offsetX;
         const y = e.offsetY;
         const xDoc = e.pageX;
         const yDoc = e.pageY;
-        const pixel = ctx.getImageData(x, y, 1, 1);
         const bitmap = await createImageBitmap(ctx.getImageData(x-2, y-2, 5, 5))
         magnify(bitmap, e.x, e.y, xDoc, yDoc);
+    }
+
+    imageCanvas.addEventListener('mousemove', mouseOverCanvas);
+
+    imageCanvas.addEventListener('mousedown', function(e) {
+        const x = e.offsetX;
+        const y = e.offsetY;
+        const pixel = ctx.getImageData(x, y, 1, 1);
         const data = pixel.data;
         const rgba = 'rgba(' + data[0] + ', ' + data[1] + ', ' + data[2] + ', ' + (data[3] / 255) + ')';
         selectedColor.innerText = rgba;
-    });
+    })
 
 });
 
