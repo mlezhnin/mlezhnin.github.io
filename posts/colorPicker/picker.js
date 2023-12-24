@@ -3,6 +3,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const imageCanvas = document.getElementById('imageCanvas');
     const ctx = imageCanvas.getContext('2d');
     const selectedColor = document.getElementById('selectedColor');
+    const colorBlock = document.getElementById('colorBlock');
+    const cbctx = colorBlock.getContext('2d');
 
     imageUploader.addEventListener('change', function (e) {
         const file = e.target.files[0];
@@ -39,6 +41,8 @@ document.addEventListener('DOMContentLoaded', function () {
         const data = pixel.data;
         const rgba = 'rgba(' + data[0] + ', ' + data[1] + ', ' + data[2] + ', ' + (data[3] / 255) + ')';
         selectedColor.innerText = rgba;
+        cbctx.fillStyle = rgba;
+        cbctx.fillRect(0, 0, colorBlock.width, colorBlock.height);
     })
 
 });
