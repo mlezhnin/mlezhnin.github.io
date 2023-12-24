@@ -102,6 +102,14 @@ div.content {
   text-decoration: none;
 }
 
+.magnifier-lens {
+  width: 100px;  /* Adjust the size of the lens */
+  height: 100px;
+  visibility: visible;  /* Hide the lens initially */
+  pointer-events: none;
+  /* Add any additional styling such as border-radius for a circular lens, etc. */
+}
+
 footer {
   color:#9AA5B1;
   text-align: center;

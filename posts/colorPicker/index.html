@@ -8,8 +8,12 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter">
 </head>
 <body>
-    <p>
-        Testing whether the page works as intended now that I have changed it to index.html.
-    </p>
+    <input type="file" id="imageUploader" accept="image/*">
+    <canvas id="imageCanvas"></canvas>
+    <p>Selected Color: <span id="selectedColor"></span></p>
+
+    <canvas id="magnifierLens" class="magnifier-lens"></canvas>
+
+    <script src="picker.js"></script>
 </body>
 </html>
