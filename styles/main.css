@@ -1,0 +1,43 @@
+/* For mobile only changes */
+
+div.content {
+  padding-top:3vh;
+}
+
+.posts {
+  list-style-type: none;
+  margin: 0;
+  float: left;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+}
+
+.post_title {
+  color:#FAFAFA;
+  padding-bottom: 2px;
+  font-weight: bold;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.post_desc {
+  color: #9AA5B1;
+  padding-bottom: 2px;
+  text-decoration: none;
+}
+
+.post_time {
+  color: #4f555c;
+  padding-bottom: 2px;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+/* Good color for text on light backgrounds */
+/* color: rgb(44, 44, 44); */

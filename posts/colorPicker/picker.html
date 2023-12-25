@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color picker</title>
+    <link rel="stylesheet" href="../../styles/global.css">
+    <link rel="stylesheet" href="picker.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter">
+</head>
+<body>
+    <div id="root">
+        <header>
+            <nav id="header-nav">
+                <ul>
+                    <li class="priority_nav"><a href="/">Michael Lezhnin</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="/about.html">About</a></li>
+                </ul>
+            </nav>
+        </header>
+        <input type="file" id="imageUploader" accept="image/*">
+        <canvas id="imageCanvas"></canvas>
+        <p>Selected Color: <span id="selectedColor"></span></p>
+        <canvas id="colorBlock"></canvas>
+
+        <canvas id="magnifierLens" class="magnifier-lens"></canvas>
+
+        <script src="picker.js"></script>
+    </div>
+</body>
+</html>

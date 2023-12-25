@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const xDoc = e.pageX;
         const yDoc = e.pageY;
         const bitmap = await createImageBitmap(ctx.getImageData(x-2, y-2, 5, 5))
-        magnify(bitmap, e.x, e.y, xDoc, yDoc);
+        magnify(bitmap, xDoc, yDoc);
     }
 
     imageCanvas.addEventListener('mousemove', mouseOverCanvas);
@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 });
 
-function magnify(bitmap, x, y, xDoc, yDoc) {
+function magnify(bitmap, xDoc, yDoc) {
     const magnifierLens = document.getElementById('magnifierLens');
     const ctx = magnifierLens.getContext('2d');
 

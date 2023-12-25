@@ -1,0 +1,57 @@
+/* Global styles */
+
+html, body {
+    height: 100%;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 200;
+    color: #9AA5B1;
+    background-color: #181818;
+}
+
+#root {
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 0 16px;
+}
+
+/* Nav bar styling */
+
+header {
+    margin-top:3vh;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+  
+nav ul li {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    float: left;
+}
+  
+nav li a {
+    color: #9AA5B1;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+  
+nav ul li.priority_nav {
+    color:#FAFAFA;
+    padding-left: 0;
+    font-weight: bold;
+}
+  
+nav ul li.priority_nav a {
+    color:#FAFAFA;
+    font-weight: bold;
+}
+
+/* Footer styling (currently, footer is removed) */
