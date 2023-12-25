@@ -36,7 +36,6 @@ function createPosts() {
             posts.forEach(post => {
                 createPost(post);
             });
-            console.log("Post created")
         });
 }
 
