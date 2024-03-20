@@ -10,13 +10,14 @@ div.content {
   margin: 0;
   float: left;
   overflow: hidden;
-  display: flex;
+  display: block;
   align-items: center;
 }
 
 .post {
   display: flex;
   flex-direction: column;
+  margin-bottom: 10px;
 }
 
 .post_title {
