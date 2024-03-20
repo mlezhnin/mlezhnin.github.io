@@ -8,5 +8,15 @@
         "url": "/posts/colorPicker",
         "date_created": 1703107021000,
         "date_last_edited": 1703107021000
+    },
+    {
+        "meta" : {
+            "type": "tool"
+        },
+        "title": "Articles I Like",
+        "description": "Collection of articles from around the internet that I liked",
+        "url": "/posts/articlesILike",
+        "date_created": 1710896809000,
+        "date_last_edited": 1710896809000
     }
 ]
